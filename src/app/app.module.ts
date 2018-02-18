@@ -6,8 +6,8 @@ import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdProgressSpinnerModule, MdIconModule} from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatProgressSpinnerModule, MatIconModule } from '@angular/material';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
@@ -23,8 +23,8 @@ import { PlaneService } from './plane.service';
     InMemoryWebApiModule.forRoot(InMemoryDataService),
     AppRoutingModule,
     BrowserAnimationsModule,
-    MdProgressSpinnerModule,
-    MdIconModule
+    MatProgressSpinnerModule,
+    MatIconModule
   ],
   providers: [PlaneService],
   bootstrap: [AppComponent]
